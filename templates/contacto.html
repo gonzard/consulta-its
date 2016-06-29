@@ -1,0 +1,109 @@
+{% extends 'base_site.html' %}
+{% block title %}Ponte en contacto con nosotros{% endblock %}
+{% block title.h1 %}Contáctanos{% endblock %}
+{% block breadcrumb %}
+<li class="active">Contacto</li>
+{% endblock %}
+{% block map %}<div id="map2" class="height-300"></div>{% endblock %}
+
+{% block section1.container %}
+<!-- FORM -->
+<div class="col-md-9 col-sm-9">
+<h3>¡Ponte en contacto con nosotros!</h3>
+{% if Message == 'none' %}
+{% elif Message == 'success' %}
+<div style="display: block;" class="alert alert-success margin-bottom-30">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+	<strong>¡Mensaje Enviado!</strong> En breve nos pondremos en contacto.
+</div>
+{% elif Message == 'error' %}
+<div style="display: block;" class="alert alert-danger margin-bottom-30">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+	<strong>¡Error!</strong> Verifica tu información.
+</div>
+{% endif %}
+	<form action="" method="post">{% csrf_token %}
+		<fieldset>
+			<div class="row">
+			<div class="form-group">
+			<div class="col-md-4">
+			<label for="contact:name">Nombre Completo *</label>
+			<input required type="text" value="" class="form-control" name="contact_name" id="name"  maxlength="50" minlength="10">
+			</div>
+			<div class="col-md-4">
+			<label for="contact:email">E-mail *</label>
+			<input required type="email" value="" class="form-control" name="contact_email" id="email"  maxlength="50" minlength="10">
+			</div>
+			<div class="col-md-4">
+			<label for="contact:phone">Teléfono</label>
+			<input type="tel" value="" class="form-control" name="contact_phone" id="phone" maxlength="15" minlength="7">
+			</div>
+			</div>
+			</div>
+			<div class="row">
+			<div class="form-group">
+			<div class="col-md-8">
+			<label for="contact:subject">Empresa *</label>
+			<input required type="text" value="" class="form-control" name="contact_company" id="company">
+			</div>
+			<div class="col-md-4">
+			<label for="contact_department">Asunto *</label>
+			<select class="form-control" name="contact_product" required>
+			<option value="" >--- Selecciona ---</option>
+			<option value="Contacto">Contacto</option>
+			{% if Categorias %}
+				{% for Tarento in Categorias %}
+					<option value="Informes de {{ Tarento.url }}">Informes de {{ Tarento.categoria }}</option>
+				{% endfor %}
+			{% endif %}
+			</select>
+			</div>
+			</div>
+			</div>
+			<div class="row">
+				<div class="form-group">
+				<div class="col-md-12">
+				<label for="contact:message">Mensaje *</label>
+				<textarea required maxlength="10000" minlength="10" rows="8" class="form-control" name="content" id="contact:message"></textarea>
+				</div>
+				</div>
+			</div>
+			</fieldset>
+			<div class="row">
+			<div class="col-md-12">
+			<button type="submit" class="btn btn-primary"><i class="fa fa-envelope"></i> Enviar</button>
+			</div>
+			</div>
+			</form>
+	</div>
+	<!-- /FORM -->
+	<!-- INFO -->
+	<div class="col-md-3 col-sm-3">
+	<h3>Visítanos</h3>
+	<hr />
+	<p>
+		<span class="block"><strong><i class="fa fa-map-marker"></i> Dirección:</strong> Av. Río Papaloapan #202, Col. Arquitos, Querétaro, Qro. </span>
+		<span class="block"><strong><i class="fa fa-phone"></i> Teléfono:</strong> <span style="color:#F07057">(442) 213. 34. 22</span></span>
+		<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:contacto@tarento.mx">contacto@tarento.mx</a></span>
+	</p>
+	<hr />
+	<h4 class="font300">Horarios de oficina</h4>
+	<p>
+		<span class="block"><strong>Lunes a Viernes:</strong> 9am a 7pm</span>
+		<span class="block"><strong>Sábado y Domingo:</strong> Cerrado</span>
+	</p>
+</div>
+<!-- /INFO -->
+{% endblock %}
+
+{% block section2 %}{% endblock %}
+
+{% block callout.txt %}¿Aún no conoces nuestros productos?{% endblock %} 
+{% block callout.bold %}Cambia tu entorno{% endblock %}
+
+{% block extrajs %}<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="/static/assets/plugins/gmaps.js"></script>
+<script type="text/javascript">jQuery(document).ready(function(){var map2 = new GMaps({div: '#map2',lat: 20.5863528,lng: -100.3650091,scrollwheel: false});	var marker = map2.addMarker({lat: 20.5863528,lng: -100.3650091, title: 'Tarento, Muebles.'});});</script>
+{% endblock %}
+
+

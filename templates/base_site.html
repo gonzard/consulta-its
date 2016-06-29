@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Muebles para oficina{% endblock %}
+{% block content %}
+<section class="page-header dark {% block page.header %}{% endblock %}" style="background-color:rgba(0,0,0,0.7)">
+<div class="container">
+<h1 style="text-transform:uppercase">{% block title.h1 %}Muebles Tarento{% endblock %}</h1>
+<!-- breadcrumbs -->
+<ol class="breadcrumb">
+	<li><a href="/">Inicio</a></li>
+	{% block breadcrumb %}
+	<li class="active">Active</li>
+	{% endblock %}
+</ol>
+{% block page.tabs %}{% endblock %}
+</div>
+</section>
+{% block map %}{% endblock %}
+{% block section1 %}
+<section{% block section1.class %}{% endblock %}>
+<div class="container"><div class="row">{% block section1.container %}{% endblock %}</div></div>
+</section>
+{% endblock %}
+{% block section2 %}
+<section{% block section2.class %}{% endblock %}>
+<div class="container">{% block section2.container %}{% endblock %}</div>
+</section>
+{% endblock %}
+{% block callout %}
+<a href="{% block callout.url %}/productos{% endblock %}" rel="nofollow" class="btn btn-xlg btn-warning size-20 fullwidth nomargin noradius padding-40"><span class="font-lato size-30">{% block callout.txt %}¿Listo para cambiar tu entorno?{% endblock %} <strong>{% block callout.bold %}Mira nuestros productos{% endblock %} &raquo;</strong></span></a>
+{% endblock %}
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base_site.html' %}
+{% block title %}Política de Privacidad{% endblock %}
+{% block title.h1 %}Política de Privacidad{% endblock %}
+{% block breadcrumb %}
+<li class="active">Política de Privacidad</li>
+{% endblock %}
+
+{% block section1.container %}
+<div class="col-md-12 col-sm-12 nomargin-top size-20 font-lato text-muted">
+{% if Policy %}
+{% for Tarento in Policy %}
+<h3 class="nomargin">{{ Tarento.titulo }}</h3>
+{{ Tarento.descripcion|safe }}
+<p>Esta política de privacidad se actualizó el día {{ Tarento.actualizacion }}</p>
+{% endfor %}
+{% endif %}
+<div class="divider nomargin-bottom"><!-- divider --></div>
+<a class="size-16 font-lato" href="/"><i class="glyphicon glyphicon-menu-left margin-right-10 size-12"></i> ¡Regresa al inicio!</a>
+</div>
+{% endblock %}
+
+{% block section2 %}{% endblock %}
+
+{% block callout.txt %}¿Aún no conoces nuestros productos?{% endblock %} 
+{% block callout.bold %}Cambia tu entorno{% endblock %}

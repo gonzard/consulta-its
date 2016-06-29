@@ -1,0 +1,20 @@
+{% extends 'base_site.html' %}
+{% block title %}Error 404{% endblock %}
+{% block title.h1 %}Página no encontrada{% endblock %}
+{% block breadcrumb %}
+<li class="active">Error 404</li>
+{% endblock %}
+{% block section1.class %} class="padding-xlg"{% endblock %}
+{% block section1.container %}
+	<div class="col-md-6 col-sm-6 hidden-xs"><div class="error-404">404</div></div>
+	<div class="col-md-6 col-sm-6">
+		<h3 class="nomargin"><strong>Lo sentimos, </strong>la página que estás solicitando no existe!</h3>
+		<p class="nomargin-top size-20 font-lato text-muted">Si crees que ha sido un error de nuestra parte, informa a <a href="/contacto">contacto@tarento.mx</a>.</p>
+		<div class="divider nomargin-bottom"><!-- divider --></div>
+		<a class="size-16 font-lato" href="/"><i class="glyphicon glyphicon-menu-left margin-right-10 size-12"></i> ¡Regresa al inicio!</a> 
+	</div>
+{% endblock %}
+{% block section2 %}{% endblock %}
+
+{% block callout.txt %}Conoce nuestros productos y{% endblock %} 
+{% block callout.bold %}déjate cautivar{% endblock %}
