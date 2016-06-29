@@ -6,17 +6,15 @@
 {% endblock %}
 
 {% block section1.container %}
-	{% if About %}
-		{% for description in About %}
+
 		<div class="col-lg-5 col-md-5 col-sm-5"><div style=""><img class="img-responsive" src="{{ description.imagen.url }}" alt=""></div></div><div class="col-lg-7 col-md-7 col-sm-7">
-		<h2 class="size-25">{{ description.titulo }}</h2>
+		<h2 class="size-25">Consulta Information Technology Services</h2>
 		<span style="font-size: 24px;"><strong>Misión</strong></span>
-		{{ description.mision|safe }}
+		<p>Somos una organización que ofrece servicios avanzados de tecnología y asesoría orientados a buscar el estado óptimo de sus clientes por medio de sus servicios y productos, utilizando la más alta tecnología, esquema de computo sobre Internet (Cloud Computing), así como una serie de servicios complementarios que aportan el máximo valor a nuestros socios de negocios, que es como consideramos a nuestros clientes.</p>
 		<span style="font-size: 24px;"><strong>Visión</strong></span>
-		{{ description.vision|safe }}
-		<blockquote style="min-height:80px"><p>{{ description.cita }} </p><cite>{{ description.autor }}</cite></blockquote> </div>
-		{% endfor %}
-	{% endif %}
+		<p>Especializados en servicios gestionados y soporte automatizado, Consulta ITS pone en primer lugar a sus clientes ofreciendo servicios de clase mundial, con una atención activa y personalizada en soluciones de monitoreo y automatización que reducen al mínimo el tiempo de inactividad y maximizar la productividad. Consulta ITS está preparado con el apoyo y la experiencia para mantenerlo concentrado en el manejo de su negocio.}</p>
+		<blockquote style="min-height:80px"><p>Nuestro negocio es hacer que la tecnología trabaje correctamente para las organizaciones, para que esas organizaciones se enfoquen en su negocio y hacerlo cada vez mas rentable. </p><cite>Fernando Tejeda - Director General</cite></blockquote> </div>
+
 {% endblock %}
 
 {% block section2.container %}<header class="text-center margin-bottom-10"><h3>NUESTROS VALORES</h3></header>
@@ -53,8 +51,7 @@
 	</div>
 	<div class="col-md-2 col-xs-6">
 		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-balance-scale" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Ética</h4>
+			<img src="http://blabla.jpg"/>
 		</div>
 	</div>
 </div>{% endblock %}
