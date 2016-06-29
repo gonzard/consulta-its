@@ -25,4 +25,4 @@ def consult_faq(request):
 	return render(request, 'faq.html')
 
 def consult_sitemap(request):
-	return render(request, 'sitemap.xml', content_type = "text/xml")
+	return render(request, 'sitemap.xml', content_type = 'text/xml')
