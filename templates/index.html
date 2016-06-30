@@ -4,6 +4,8 @@
 {% load staticfiles %}<link href="{% static "assets/plugins/slider.revolution/css/extralayers.css" %}" rel="stylesheet" type="text/css"></link>
 {% load staticfiles %}<link href="{% static "assets/plugins/slider.revolution/css/settings.css" %}" rel="stylesheet" type="text/css"></link>
 {% endblock %}
+
+{% block menu.inicio %}active{% endblock %}
 {% block content %}
 <!-- REVOLUTION SLIDER -->
 {% if Slides %}
@@ -52,16 +54,19 @@
 <div class="container">
 <div class="row">
 	<div class="col-sm-4">
-		<i class="glyphicon glyphicon-globe" style="color:#F07057; line-height: 0.8;"></i>
+		<i class="glyphicon glyphicon-globe"></i>
 		<h3>COMPROMISO CON EL AMBIENTE</h3>
+		<p>Descripción</p>
 	</div>
 	<div class="col-sm-4">
-		<i class="glyphicon glyphicon-certificate" style="color:#F07057; line-height: 0.8;"></i>
+		<i class="glyphicon glyphicon-certificate"></i>
 		<h3>CALIDAD GALARDONADA</h3>
+		<p>Descripción</p>
 	</div>
 	<div class="col-sm-4">
-		<i class="glyphicon glyphicon-flag" style="color:#F07057; line-height: 0.8;"></i>
+		<i class="glyphicon glyphicon-flag"></i>
 		<h3>ASISTENCIA PERSONALIZADA</h3>
+		<p>Descripción</p>
 	</div>
 </div>
 </div>
@@ -248,9 +253,10 @@
 </div>
 </section>
 {% endif %}
-<a href="{% block callout.url %}/contacto{% endblock %}" rel="nofollow" class="btn btn-xlg btn-warning size-20 fullwidth nomargin noradius padding-40"><span class="font-lato size-30">{% block callout.txt %}¿Listo para cambiar tu entorno?{% endblock %} <strong>{% block callout.bold %}Ponte en contacto{% endblock %} &raquo;</strong></span></a>
+<a href="{% block callout.url %}/contacto{% endblock %}" rel="nofollow" class="btn btn-xlg btn-bitbucket size-20 fullwidth nomargin noradius padding-40"><span class="font-lato size-30">{% block callout.txt %}Lleva tu negocio al siguiente nivel{% endblock %} <strong>{% block callout.bold %}Ponte en contacto{% endblock %} &raquo;</strong></span></a>
 {% endblock %}
 {% block extrajs %}
-{% load staticfiles %}<script type="text/javascript" src="{% static "assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js" %}"></script>
-{% load staticfiles %}<script type="text/javascript" src="{% static "assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js" %}"></script>
-{% load staticfiles %}<script type="text/javascript" src="{% static "assets/js/view/demo.revolution_slider.js" %}"></script>{% endblock %}
+<script type="text/javascript" src="http://consulta-its.com/static/assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"/>
+<script type="text/javascript" src="http://consulta-its.com/static/assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"/>
+<script type="text/javascript" src="http://consulta-its.com/static/assets/js/view/demo.revolution_slider.js" />
+{% endblock %}

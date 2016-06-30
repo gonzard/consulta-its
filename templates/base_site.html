@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% block title %}Muebles para oficina{% endblock %}
 {% block content %}
-<section class="page-header dark {% block page.header %}{% endblock %}" style="background-color:rgba(0,0,0,0.7)">
+<section class="page-header {% block page.header %}{% endblock %}">
 <div class="container">
-<h1 style="text-transform:uppercase">{% block title.h1 %}Muebles Tarento{% endblock %}</h1>
+<h1 style="text-transform:uppercase">{% block title.h1 %}Consulta ITS{% endblock %}</h1>
 <!-- breadcrumbs -->
 <ol class="breadcrumb">
 	<li><a href="/">Inicio</a></li>
@@ -26,7 +26,7 @@
 </section>
 {% endblock %}
 {% block callout %}
-<a href="{% block callout.url %}/productos{% endblock %}" rel="nofollow" class="btn btn-xlg btn-warning size-20 fullwidth nomargin noradius padding-40"><span class="font-lato size-30">{% block callout.txt %}¿Listo para cambiar tu entorno?{% endblock %} <strong>{% block callout.bold %}Mira nuestros productos{% endblock %} &raquo;</strong></span></a>
+<a href="{% block callout.url %}/productos{% endblock %}" rel="nofollow" class="btn btn-xlg btn-bitbucket size-20 fullwidth nomargin noradius padding-40"><span class="font-lato size-30">{% block callout.txt %}¿Listo para cambiar tu entorno?{% endblock %} <strong>{% block callout.bold %}Mira nuestros productos{% endblock %} &raquo;</strong></span></a>
 {% endblock %}
 
 {% endblock %}

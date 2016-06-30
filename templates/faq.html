@@ -1,0 +1,60 @@
+{% extends 'base_site.html' %}
+{% block title %}Sobre Nosotros{% endblock %}
+{% block title.h1 %}Nuestra Misión{% endblock %}
+{% block breadcrumb %}
+<li class="active">Nosotros</li>
+{% endblock %}
+
+{% block section1.container %}
+	{% if About %}
+		{% for description in About %}
+		<div class="col-lg-5 col-md-5 col-sm-5"><div style=""><img class="img-responsive" src="{{ description.imagen.url }}" alt=""></div></div><div class="col-lg-7 col-md-7 col-sm-7">
+		<h2 class="size-25">{{ description.titulo }}</h2>
+		<span style="font-size: 24px;"><strong>Misión</strong></span>
+		{{ description.mision|safe }}
+		<span style="font-size: 24px;"><strong>Visión</strong></span>
+		{{ description.vision|safe }}
+		<blockquote style="min-height:80px"><p>{{ description.cita }} </p><cite>{{ description.autor }}</cite></blockquote> </div>
+		{% endfor %}
+	{% endif %}
+{% endblock %}
+
+{% block section2.container %}<header class="text-center margin-bottom-10"><h3>NUESTROS VALORES</h3></header>
+<div class="row">				
+	<div class="col-md-2 col-xs-6">
+		<div class="text-center">
+			<i class="ico-light ico-lg ico-rounded fa fa-line-chart" style="background-color:#fff; color: #F07057;"></i>
+			<h4>Liderazgo</h4>
+		</div>
+	</div>
+	<div class="col-md-2 col-xs-6">
+		<div class="text-center">
+			<i class="ico-light ico-lg ico-rounded fa fa-globe " style="background-color:#fff; color: #F07057;"></i>
+			<h4>Respeto</h4>
+		</div>
+	</div>
+	<div class="col-md-2 col-xs-6">
+		<div class="text-center">
+			<i class="ico-light ico-lg ico-rounded fa fa-comments-o" style="background-color:#fff; color: #F07057;"></i>
+			<h4>Confianza</h4>
+		</div>
+	</div>
+	<div class="col-md-2 col-xs-6">
+		<div class="text-center">
+			<i class="ico-light ico-lg ico-rounded fa fa-users" style="background-color:#fff; color: #F07057;"></i>
+			<h4>Compromiso</h4>
+		</div>
+	</div>
+	<div class="col-md-2 col-xs-6">
+		<div class="text-center">
+			<i class="ico-light ico-lg ico-rounded fa fa-trophy" style="background-color:#fff; color: #F07057;"></i>
+			<h4>Actitud</h4>
+		</div>
+	</div>
+	<div class="col-md-2 col-xs-6">
+		<div class="text-center">
+			<i class="ico-light ico-lg ico-rounded fa fa-balance-scale" style="background-color:#fff; color: #F07057;"></i>
+			<h4>Ética</h4>
+		</div>
+	</div>
+</div>{% endblock %}
