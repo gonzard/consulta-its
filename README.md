@@ -1,45 +1,3 @@
-
-
-
-
-
-********
-Características
-********
-
-
-
-************
-
-************
-
-
-*************
-
-*************
-
-
-***********
-
-***********
-
-
-
-************
-Soporte
-************
-Para ayuda sobre como clonar el proyecto y editarlo consulte con http://codelab.mxl.
-
-******************
-Soporte Adicional
-******************
-
-Este proyecto es creado por 'Codelab MX' Grupo Teklan S.R.L. de C.V. para el dominio http://consulta-its.com 
-Si se requiere implementar o alojar este producto puede contactar al correo:
-info@codelab.mx.
-
-
-
 Consulta ITS
 =============
 
@@ -106,3 +64,17 @@ Puedes usar el instalador de django en un entorno virtual
     (env) $ pip install django-bakery
     (env) $ mkdir consultaits && cd consultaits
     (env) $ python manage.py runserver
+
+
+Soporte
+------------
+Para ayuda sobre como clonar el proyecto y editarlo consulte con http://codelab.mxl.
+
+
+Soporte Adicional
+------------
+
+Este proyecto es creado por 'Codelab MX' Grupo Teklan S.R.L. de C.V. para el dominio http://consulta-its.com 
+Si se requiere implementar o alojar este producto puede contactar al correo:
+info@codelab.mx.
+
