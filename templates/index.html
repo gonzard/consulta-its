@@ -89,26 +89,26 @@
 
 <!-- /WELCOME -->
 <!-- -->
-{% if seccion1 %}
+
 <section class="alternate">
 <div class="container">
 <div class="row">
-{% for Seccion in seccion1 %}
+
 	<div class="col-md-4">
 		<div class="box-icon box-icon-side box-icon-color box-icon-round">
 			<i class="fa {{ Seccion.icono }}" style="font-size:32px;"></i>
-			<h4>{{ Seccion.titulo }}</h4>
-			<p>{{ Seccion.descripcion }}</p>
+			<h4>Hello</h4>
+			<p>Its me</p>
 		</div>
 	</div>
-	{% endfor %}
+	
 </div>
 </div>
 </section>
-{% endif %}
+
 <!-- / -->
 <!-- -->
-{% if Categorias %}
+
 <section>
 <div class="container">
 	<header class="text-center margin-bottom-40">
@@ -116,19 +116,17 @@
 	</header>
 <div class="row">
 	<div class="col-sm-6">
-		{% for Tarento in Categorias %}
 		{{ Tarento.descripcion|safe }}
 		<p></p>
-		<a style="text-transform:uppercase" class="btn btn-default" href="/productos/{{ Tarento.url }}">{{ Tarento.categoria }}</a>
+		<a style="text-transform:uppercase" class="btn btn-default" href="home"></a>
 	</div>
 	<div class="col-sm-6">
-		<img class="img-responsive" src="{{ Tarento.imagen.url }}" alt="{{ Tarento.categoria }}" />
+		<img class="img-responsive" src="/static" alt="Hey" />
 	</div>
-		{% endfor %}
+
 </div>
 </div>
 </section>
-{% endif %}
 
 <section class="parallax parallax-2" style="background-image: url('http://consulta-its.com/static/images/backgrounds/parallax-c3.jpg');">
 <div class="overlay dark-8"></div>
@@ -146,7 +144,7 @@
 			<path fill-rule="evenodd" clip-rule="evenodd" fill="#E8E8E7" d="M32.672,59.936c-4.502,0-8.152,3.648-8.152,8.151v26.268  c0,4.96,4.019,8.98,8.985,8.98h13.478c1.653,0,2.991,1.337,2.991,2.992v20.253c0,2.865,2.325,5.188,5.19,5.188h0.106  c2.868,0,5.19-2.323,5.19-5.188v-24.744c0-4.96-4.024-8.978-8.985-8.978H40.994V68.087c0-4.503-3.652-8.151-8.158-8.151H32.672"/>
 			<path fill-rule="evenodd" clip-rule="evenodd" fill="#E8E8E7" d="M110.218,55.727c5.79,0,10.48-4.688,10.48-10.472  s-4.691-10.479-10.48-10.479c-5.786,0-10.479,4.695-10.479,10.479S104.432,55.727,110.218,55.727 M111.05,60.216h-0.163  c-4.506,0-8.158,3.648-8.158,8.151v24.771H92.247c-4.96,0-8.985,4.018-8.985,8.978v24.744c0,2.865,2.323,5.188,5.19,5.188h0.106  c2.865,0,5.19-2.323,5.19-5.188v-20.253c0-1.655,1.338-2.992,2.991-2.992h13.478c4.966,0,8.985-4.021,8.985-8.98V68.367  C119.203,63.864,115.553,60.216,111.05,60.216 M48.819,84.163h46.423c0.829,0,1.498-0.673,1.498-1.497v-4.493  c0-0.824-0.669-1.49-1.498-1.49H48.819c-0.824,0-1.494,0.666-1.494,1.49v4.493C47.325,83.49,47.995,84.163,48.819,84.163   M56.227,34.493c-0.471,2.599-1.986,5.657-4.093,7.768c5.153-0.385,9.691-1.861,12.661-4.898c1.045,0.133,2.107,0.223,3.197,0.223  c10.92,0,19.766-7,19.766-15.632c0-8.637-8.849-15.632-19.766-15.632c-10.916,0-19.767,6.995-19.767,15.632  C48.225,27.098,51.383,31.647,56.227,34.493 M77.258,18.867c1.703,0,3.085,1.379,3.085,3.086c0,1.701-1.382,3.086-3.085,3.086  c-1.705,0-3.092-1.385-3.092-3.086C74.166,20.246,75.553,18.867,77.258,18.867 M67.992,18.867c1.704,0,3.086,1.379,3.086,3.086  c0,1.701-1.383,3.086-3.086,3.086c-1.703,0-3.09-1.385-3.09-3.086C64.902,20.246,66.289,18.867,67.992,18.867 M58.726,18.867  c1.705,0,3.086,1.379,3.086,3.086c0,1.701-1.381,3.086-3.086,3.086c-1.707,0-3.088-1.385-3.088-3.086  C55.637,20.246,57.019,18.867,58.726,18.867"/>
 </svg>
-			<h4>ANÁLISIS</h4>
+			<h4>ANÁLISIS DE TU NEGOCIO</h4>
 			<p>Identificamos las condiciones actuales de tu empresa, creando un punto de partida para el proceso de estabilización</p>
 		</div>
 	</div>
