@@ -1,60 +1,102 @@
 {% extends 'base_site.html' %}
-{% block title %}Sobre Nosotros{% endblock %}
-{% block title.h1 %}Nuestra Misión{% endblock %}
+{% block menu.clientes %}active{% endblock %}
+{% block title %}Clientes{% endblock %}
+{% block title.h1 %}Nuestros Clientes{% endblock %}
 {% block breadcrumb %}
-<li class="active">Nosotros</li>
+<li class="active">Clientes</li>
 {% endblock %}
 
+<!-- 
+	Note: remove class="rounded" from the img for squared image!
+-->
 {% block section1.container %}
-	{% if About %}
-		{% for description in About %}
-		<div class="col-lg-5 col-md-5 col-sm-5"><div style=""><img class="img-responsive" src="{{ description.imagen.url }}" alt=""></div></div><div class="col-lg-7 col-md-7 col-sm-7">
-		<h2 class="size-25">{{ description.titulo }}</h2>
-		<span style="font-size: 24px;"><strong>Misión</strong></span>
-		{{ description.mision|safe }}
-		<span style="font-size: 24px;"><strong>Visión</strong></span>
-		{{ description.vision|safe }}
-		<blockquote style="min-height:80px"><p>{{ description.cita }} </p><cite>{{ description.autor }}</cite></blockquote> </div>
-		{% endfor %}
-	{% endif %}
+<!-- 
+	controlls-over		= navigation buttons over the image 
+	buttons-autohide 	= navigation buttons visible on mouse hover only
+	
+	data-plugin-options:
+		"singleItem": true
+		"autoPlay": true
+		"navigation": true
+		"pagination": true
+-->
+<div class="text-center">
+	<div class="owl-carousel nomargin" data-plugin-options='{"singleItem": false, "autoPlay": true}'>
+		<div>
+			<img class="img-responsive" src="assets/images/demo/brands/1.jpg" alt="">
+		</div>
+		<div>
+			<img class="img-responsive" src="assets/images/demo/brands/2.jpg" alt="">
+		</div>
+		<div>
+			<img class="img-responsive" src="assets/images/demo/brands/3.jpg" alt="">
+		</div>
+		<div>
+			<img class="img-responsive" src="assets/images/demo/brands/4.jpg" alt="">
+		</div>
+		<div>
+			<img class="img-responsive" src="assets/images/demo/brands/5.jpg" alt="">
+		</div>
+		<div>
+			<img class="img-responsive" src="assets/images/demo/brands/6.jpg" alt="">
+		</div>
+		<div>
+			<img class="img-responsive" src="assets/images/demo/brands/7.jpg" alt="">
+		</div>
+		<div>
+			<img class="img-responsive" src="assets/images/demo/brands/8.jpg" alt="">
+		</div>
+	</div>
+</div>
+
+
 {% endblock %}
 
-{% block section2.container %}<header class="text-center margin-bottom-10"><h3>NUESTROS VALORES</h3></header>
-<div class="row">				
-	<div class="col-md-2 col-xs-6">
-		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-line-chart" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Liderazgo</h4>
+{% block section2.container %}
+<header class="text-center margin-bottom-10"><h3>Testimonios</h3></header>
+<div class="row">
+	<div class="col-md-4">
+		<div class="testimonial testimonial-bordered padding-15">
+			<figure class="pull-left">
+				<img  src="assets/images/demo/people/300x300/2-min.jpg" alt="" />
+			</figure>
+			<div class="testimonial-content">
+				<p> Gracias a Consulta ITS Hemos logrado entender que nuestra labor es atender nuestro negocio, y que Consulta ITS nos de el soporte tecnológico que necesitamos para operar correctamente, todo se vuelve más rápido y más fácil, ellos hacen todo por nosotros, soporte, respaldos, seguridad, todo lo que tenga que ver con TI</p>
+				<cite>
+					Walter Bauer
+					<span>Director General</span>
+					<span>SERBA</span>
+				</cite>
+			</div>
 		</div>
 	</div>
-	<div class="col-md-2 col-xs-6">
-		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-globe " style="background-color:#fff; color: #F07057;"></i>
-			<h4>Respeto</h4>
+	<div class="col-md-4">
+		<div class="testimonial testimonial-bordered padding-15">
+			<figure class="pull-left">
+				<img  src="assets/images/demo/people/300x300/1-min.jpg" alt="" />
+			</figure>
+			<div class="testimonial-content">
+				<p>Nosotros no tenemos una operación muy compleja en terminos de sistemas, sin embargo es fundamental el resguado de la información generada, con Consulta ITS tenemos ese tema resuelto ya que ellos realizan estas rutinas de respaldo independientemente donde estemos y los tenemos disponibles cuando lo necesitamos. Adicionalmente resuelven dudas y atienden nuestras solicitudes de soporte técnico</p>
+				<cite>
+					Juan Carlos de la Llata
+					<span>Socio Director</span>
+					<span> De la Llata Abogados</span>
+				</cite>
+			</div>
 		</div>
 	</div>
-	<div class="col-md-2 col-xs-6">
-		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-comments-o" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Confianza</h4>
-		</div>
-	</div>
-	<div class="col-md-2 col-xs-6">
-		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-users" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Compromiso</h4>
-		</div>
-	</div>
-	<div class="col-md-2 col-xs-6">
-		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-trophy" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Actitud</h4>
-		</div>
-	</div>
-	<div class="col-md-2 col-xs-6">
-		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-balance-scale" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Ética</h4>
+	<div class="col-md-4">
+		<div class="testimonial testimonial-bordered padding-15">
+			<figure class="pull-left">
+				<img  src="assets/images/demo/people/300x300/6-min.jpg" alt="" />
+			</figure>
+			<div class="testimonial-content">
+				<p>Incidunt deleniti blanditiis quas aperiam recusandae consequatur ullam quibusdam cum libero!</p>
+				<cite>
+					Melissa Doe
+					<span>Company Ltd.</span>
+				</cite>
+			</div>
 		</div>
 	</div>
 </div>{% endblock %}
