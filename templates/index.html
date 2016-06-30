@@ -8,11 +8,10 @@
 {% block menu.inicio %}active{% endblock %}
 {% block content %}
 <!-- REVOLUTION SLIDER -->
-{% if Slides %}
 <div class="slider fullwidthbanner-container roundedcorners">
 	<div class="fullwidthbanner" data-height="600" data-shadow="0" data-navigationStyle="preview2">
 		<ul class="hide">
-		{% for Diapositiva in Slides %}
+
 		<li data-transition="random" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off">
 			<img data-lazyload="{{ Diapositiva.imagen.url }}" alt="" data-bgposition="center center" data-kenburns="on" data-duration="9000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="110" />
 			<div style="text-transform:uppercase" class="tp-caption very_large_text lfb ltt tp-resizeme"
@@ -44,12 +43,12 @@
 				{{ Diapositiva.slogan1 }}
 			</div>
 		</li>
-		{% endfor %}
+
 		</ul>
 		<div class="tp-bannertimer"></div>
 	</div>
 </div>
-{% endif %}
+
 <section class="info-bar info-bar-clean">
 <div class="container">
 <div class="row">
@@ -78,10 +77,11 @@
 <div class="container">
 
 	<header class="text-center margin-bottom-40">
-		<h1 class="weight-300">{{ Seccion.titulo }}</h1>
+		<h1 class="weight-300">Bienvenido a Consulta ITS</h1>
+		<h2 class="weight-300 letter-spacing-1 size-13"><span>La solución más completa para tu negocio</span></h2>
 	</header>
 	<div class="text-center" style="max-width:800px; margin:0 auto;">
-		<p class="lead">{{ Seccion.descripcion }}</p>
+		<p class="lead">Simplificamos la administración de tus equipos, tú eres el experto de tu negocio, nosotros somos expertos en hacer que tu tecnología trabaje para ti. Hacemos uso de nuestra tecnología para tener tu empresa siempre segura, siempre trabajando, siempre para ti.</p>
 		<div class="margin-top-40"><img class="img-responsive" src="{{ Seccion.imagen.url }}" alt="Consulta ITS" /></div>
 	</div>
 </div>
@@ -96,9 +96,24 @@
 
 	<div class="col-md-4">
 		<div class="box-icon box-icon-side box-icon-color box-icon-round">
-			<i class="fa {{ Seccion.icono }}" style="font-size:32px;"></i>
-			<h4>Hello</h4>
-			<p>Its me</p>
+			<i class="fa fa-cube"></i>
+			<h4>Servicios Administrados</h4>
+			<p>Servicios siempre disponibles para ti, permite que nuestro equipo profesional impulse a tu empresa, podrás reducir gastos, contar con mantenimiento profesional y tener a tu equipo siempre listo para ti</p>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="box-icon box-icon-side box-icon-color box-icon-round">
+			<i class="fa fa-cube"></i>
+			<h4>Servicios de Valor Agregado</h4>
+			<p>Gestión y control de tu inventario de software, hardware y licenciamiento; además contarás con un servicio de auditoria permanente, así no tendrás que preocuparte nunca más por desviaciones o cambios no autorizados</p>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="box-icon box-icon-side box-icon-color box-icon-round">
+			<i class="fa fa-cube"></i>
+			<h4>Servicios Personalizados</h4>
+			<p>Hemos diseñado nuestros servicios para ser adaptables a cualquier módelo de negocio, no importa el tamaño de tu empresa, Consulta ITS evoluciona constantemente contigo</p>
+			<a class="box-icon-more font-lato weight-300" href="#">Ver vídeo</a>
 		</div>
 	</div>
 	
@@ -113,6 +128,7 @@
 <div class="container">
 	<header class="text-center margin-bottom-40">
 		<h1 class="weight-300">Más que un servicio</h1>
+		<h2 class="weight-300 letter-spacing-1 size-13"><span>Una metodología de garantía</span></h2>
 	</header>
 <div class="row">
 	<div class="col-sm-6">
@@ -123,7 +139,6 @@
 	<div class="col-sm-6">
 		<img class="img-responsive" src="/static" alt="Hey" />
 	</div>
-
 </div>
 </div>
 </section>
