@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 {% block title %}Muebles para oficina{% endblock %}
 {% block content %}
-<section class="page-header {% block page.header %}{% endblock %}">
+<section class="page-header parallax parallax-3" style="background-image:url('http://consulta-its.com/static/images/backgrounds/{% block parallax.header %}parallax-c3.jpg{% endblock %}')">
+<div class="overlay dark-5"></div>
 <div class="container">
 <h1 style="text-transform:uppercase">{% block title.h1 %}Consulta ITS{% endblock %}</h1>
+<span class="font-lato size-18 weight-300">{% block subtitle %}Soluciones de TI{% endblock %}</span>
 <!-- breadcrumbs -->
 <ol class="breadcrumb">
 	<li><a href="/">Inicio</a></li>
@@ -26,7 +28,7 @@
 </section>
 {% endblock %}
 {% block callout %}
-<a href="{% block callout.url %}/productos{% endblock %}" rel="nofollow" class="btn btn-xlg btn-bitbucket size-20 fullwidth nomargin noradius padding-40"><span class="font-lato size-30">{% block callout.txt %}¿Listo para cambiar tu entorno?{% endblock %} <strong>{% block callout.bold %}Mira nuestros productos{% endblock %} &raquo;</strong></span></a>
+<a href="{% block callout.url %}/servicios.html{% endblock %}" rel="nofollow" class="btn btn-xlg btn-bitbucket size-20 fullwidth nomargin noradius padding-40"><span class="font-lato size-30">{% block callout.txt %}Dale a tu empresa el impulso que necesita,{% endblock %} <strong>{% block callout.bold %}Conoce nuestros servicios{% endblock %} &raquo;</strong></span></a>
 {% endblock %}
 
 {% endblock %}

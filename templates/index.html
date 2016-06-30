@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
-{% block extracss %}<link href="/static/assets/css/layout-shop.css" rel="stylesheet" type="text/css" />
+{% block extracss %}<link href="http://consulta-its.com/static/assets/css/layout-shop.css" rel="stylesheet" type="text/css" />
 <!-- REVOLUTION SLIDER -->
-{% load staticfiles %}<link href="{% static "assets/plugins/slider.revolution/css/extralayers.css" %}" rel="stylesheet" type="text/css"></link>
-{% load staticfiles %}<link href="{% static "assets/plugins/slider.revolution/css/settings.css" %}" rel="stylesheet" type="text/css"></link>
+<link href="http://consulta-its.com/static/assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css"></link>
+<link href="http://consulta-its.com/static/assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css"></link>
 {% endblock %}
 
 {% block menu.inicio %}active{% endblock %}
@@ -55,18 +55,18 @@
 <div class="row">
 	<div class="col-sm-4">
 		<i class="glyphicon glyphicon-globe"></i>
-		<h3>COMPROMISO CON EL AMBIENTE</h3>
-		<p>Descripción</p>
+		<h3>SIEMPRE CONTIGO</h3>
+		<p>Tu negocio siempre estará protegido con nosotros</p>
 	</div>
 	<div class="col-sm-4">
 		<i class="glyphicon glyphicon-certificate"></i>
-		<h3>CALIDAD GALARDONADA</h3>
-		<p>Descripción</p>
+		<h3>ÁLTOS ESTÁNDARES DE CALIDAD</h3>
+		<p>Prevenimos errores para que nunca tengas que preocuparte</p>
 	</div>
 	<div class="col-sm-4">
 		<i class="glyphicon glyphicon-flag"></i>
-		<h3>ASISTENCIA PERSONALIZADA</h3>
-		<p>Descripción</p>
+		<h3>MEJORA CONTINUA</h3>
+		<p>Siempre evolucionando para adaptarnos a tu negocio</p>
 	</div>
 </div>
 </div>
@@ -82,7 +82,7 @@
 	</header>
 	<div class="text-center" style="max-width:800px; margin:0 auto;">
 		<p class="lead">{{ Seccion.descripcion }}</p>
-		<div class="margin-top-40"><img class="img-responsive" src="{{ Seccion.imagen.url }}" alt="Tarento" /></div>
+		<div class="margin-top-40"><img class="img-responsive" src="{{ Seccion.imagen.url }}" alt="Consulta ITS" /></div>
 	</div>
 </div>
 </section>
