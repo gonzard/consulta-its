@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
-{% block extracss %}<link href="http://consulta-its.com/static/assets/css/layout-shop.css" rel="stylesheet" type="text/css" />
+{% block extracss %}
+<link href="http://consulta-its.com/static/assets/css/layout-shop.css" rel="stylesheet" type="text/css" />
 <!-- REVOLUTION SLIDER -->
-<link href="http://consulta-its.com/static/assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css"></link>
-<link href="http://consulta-its.com/static/assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css"></link>
+<link href="http://consulta-its.com/static/assets/plugins/slider.revolution/css/extralayers.css" rel="stylesheet" type="text/css" />
+<link href="http://consulta-its.com/static/assets/plugins/slider.revolution/css/settings.css" rel="stylesheet" type="text/css" />
 {% endblock %}
 
 {% block menu.inicio %}active{% endblock %}
@@ -13,7 +14,7 @@
 		<ul class="hide">
 
 		<li data-transition="random" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off">
-			<img data-lazyload="{{ Diapositiva.imagen.url }}" alt="" data-bgposition="center center" data-kenburns="on" data-duration="9000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="110" />
+			<img data-lazyload="http://consulta-its.com/static/images/backgrounds/laptop.jpeg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="9000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="110" />
 			<div style="text-transform:uppercase" class="tp-caption very_large_text lfb ltt tp-resizeme"
 				data-x="left" data-hoffset="25"
 				data-y="center" data-voffset="100"
@@ -26,7 +27,7 @@
 				data-endelementdelay="0.1"
 				data-endspeed="300"
 				data-endeasing="Power4.easeIn">
-				{{ Diapositiva.nombre }}
+				Presentación
 			</div>
 			<div class="tp-caption medium_light_white lfb ltt tp-resizeme"
 				data-x="left" data-hoffset="25"
@@ -40,7 +41,7 @@
 				data-endelementdelay="0.1"
 				data-endspeed="300"
 				data-endeasing="Power4.easeIn">
-				{{ Diapositiva.slogan1 }}
+				Con texto
 			</div>
 		</li>
 
@@ -82,7 +83,7 @@
 	</header>
 	<div class="text-center" style="max-width:800px; margin:0 auto;">
 		<p class="lead">Simplificamos la administración de tus equipos, tú eres el experto de tu negocio, nosotros somos expertos en hacer que tu tecnología trabaje para ti. Hacemos uso de nuestra tecnología para tener tu empresa siempre segura, siempre trabajando, siempre para ti.</p>
-		<div class="margin-top-40"><img class="img-responsive" src="{{ Seccion.imagen.url }}" alt="Consulta ITS" /></div>
+		<div class="margin-top-40"><img class="img-responsive" src="http://consulta-its.com/static/images/backgrounds/image.jpeg" alt="Consulta ITS" /></div>
 	</div>
 </div>
 </section>
@@ -190,7 +191,7 @@
 <a href="{% block callout.url %}/contacto.html{% endblock %}" rel="nofollow" class="btn btn-xlg btn-bitbucket size-20 fullwidth nomargin noradius padding-40"><span class="font-lato size-30">{% block callout.txt %}Lleva tu negocio al siguiente nivel,{% endblock %} <strong>{% block callout.bold %}Solicítalo ahora{% endblock %} &raquo;</strong></span></a>
 {% endblock %}
 {% block extrajs %}
-<script type="text/javascript" src="http://consulta-its.com/static/assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"/>
-<script type="text/javascript" src="http://consulta-its.com/static/assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"/>
-<script type="text/javascript" src="http://consulta-its.com/static/assets/js/view/demo.revolution_slider.js" />
+<script type="text/javascript" src="http://consulta-its.com/static/assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="http://consulta-its.com/static/assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="http://consulta-its.com/static/assets/js/view/demo.revolution_slider.js"> </script>
 {% endblock %}
