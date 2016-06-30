@@ -1,4 +1,4 @@
-Copyright (c) 2016, Grupo Teklan S.R.L. de C.V.
+Copyright (c) 2016, Codelab.mx
 Todos los derechos reservados.
 
  * Las redistribuciones del código fuente deben conservar el derecho de autor por encima de
@@ -22,3 +22,8 @@ DATOS O BENEFICIOS; O INTERRUPCIÓN DE NEGOCIO), ORIGEN Y DE CUALQUIER
 TEORÍA DE RESPONSABILIDAD, YA SEA EN CONTRATO, RESPONSABILIDAD OBJETIVA O AGRAVIO
 (INCLUYENDO NEGLIGENCIA), DERIVADOS DE CUALQUIER FORMA DE USO
 DE ESTE SOFTWARE, incluso si se advirtió de la posibilidad de DAÑO.
+
+Este software está optimizado para funcionar con la plantilla Smarty https://wrapbootstrap.com/theme/smarty-website-admin-rtl-WB02DSN1B el cuál no viene incluído dentro del mismo. Para reproducir este software tal cuál en otro website se requiere comprar una licencia adicional de la plantilla misma.
+
+El usuario final puede Clonar, Copiar, Vender, Modificar y/o Redistribuir este software, sin ninguna restricción, limitandose solamente a los archivos en formato .html, .py, .pyc, .sqlite3, .xml dentro de este documento.
+
