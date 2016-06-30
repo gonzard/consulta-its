@@ -1,4 +1,5 @@
 {% extends 'base_site.html' %}
+
 {% block title %}Sobre Nosotros{% endblock %}
 {% block title.h1 %}Nuestra Misión{% endblock %}
 {% block breadcrumb %}
@@ -6,55 +7,298 @@
 {% endblock %}
 
 {% block section1.container %}
-	{% if About %}
-		{% for description in About %}
-		<div class="col-lg-5 col-md-5 col-sm-5"><div style=""><img class="img-responsive" src="{{ description.imagen.url }}" alt=""></div></div><div class="col-lg-7 col-md-7 col-sm-7">
-		<h2 class="size-25">{{ description.titulo }}</h2>
-		<span style="font-size: 24px;"><strong>Misión</strong></span>
-		{{ description.mision|safe }}
-		<span style="font-size: 24px;"><strong>Visión</strong></span>
-		{{ description.vision|safe }}
-		<blockquote style="min-height:80px"><p>{{ description.cita }} </p><cite>{{ description.autor }}</cite></blockquote> </div>
-		{% endfor %}
-	{% endif %}
+<div class="col-md-9">
+
+							<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum pellentesque imperdiet. Nulla lacinia iaculis nulla non pulvinar. Cum sociis natoque penatibus magnis.</p>
+
+							<!-- TOGGLES -->
+							<div class="toggle toggle-transparent toggle-bordered-full margin-top-60">
+
+								<div class="toggle"><!-- toggle -->
+									<label>1. Nulla lacinia iaculis nulla non pulvinar?</label>
+									<div class="toggle-content">
+										<p class="clearfix">
+											<img class="hidden-sm pull-left img-responsive" src="assets/images/demo/girl_looking-min_thumb.jpg" alt="Careers" />
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+											<br /><br />
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+										</p>
+
+									</div>
+								</div><!-- /toggle -->
+
+								<div class="toggle"><!-- toggle -->
+									<label>2. Lacinia iaculis nulla non pulvinar?</label>
+									<div class="toggle-content">
+										<p class="clearfix">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+										</p>
+
+										<div class="row">
+
+											<div class="col-md-4 col-sm-6">
+
+												<ul class="list-icon check-square"><!-- block 2 -->
+													<li>Nulla lacinia iaculis nulla</li>
+													<li>Cum sociis natoque penatibus</li>
+													<li>Magnis dis parturient montes</li>
+												</ul>
+
+											</div>
+
+											<div class="col-md-4 col-sm-6">
+
+												<ul class="list-icon check-square"><!-- block 2 -->
+													<li>Nulla lacinia iaculis nulla</li>
+													<li>Cum sociis natoque penatibus</li>
+													<li>Magnis dis parturient montes</li>
+												</ul>
+
+											</div>
+
+											<div class="col-md-4 col-sm-6">
+
+												<ul class="list-icon check-square"><!-- block 2 -->
+													<li>Nulla lacinia iaculis nulla</li>
+													<li>Cum sociis natoque penatibus</li>
+													<li>Magnis dis parturient montes</li>
+												</ul>
+
+											</div>
+
+										</div>
+
+									</div>
+								</div><!-- /toggle -->
+
+								<div class="toggle"><!-- toggle -->
+									<label>3. Quisque rutrum pellentesque imperdiet?</label>
+									<div class="toggle-content">
+										<p class="clearfix">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+										</p>
+
+										<div class="row">
+
+											<div class="col-md-4 col-sm-6">
+
+												<div class="box-content thumbnail text-center">
+													<a href="assets/images/demo/1200x800/10-min.jpg" class="item-image lightbox" data-plugin-options='{"type":"image"}'>
+														<img class="img-responsive" src="assets/images/demo/451x300/10-min.jpg" alt="" />
+													</a>
+												</div>
+
+											</div>
+
+											<div class="col-md-4 col-sm-6">
+
+												<div class="box-content thumbnail text-center">
+													<a href="http://www.youtube.com/watch?v=W7Las-MJnJo" class="item-image lightbox" data-plugin-options='{"type":"iframe"}'>
+														<img class="img-responsive" src="assets/images/demo/451x300/11-min.jpg" alt="" />
+													</a>
+												</div>
+
+											</div>
+
+											<div class="col-md-4 col-sm-6">
+
+												<div class="box-content thumbnail text-center">
+													<a href="assets/images/demo/1200x800/25-min.jpg" class="item-image lightbox" data-plugin-options='{"type":"image"}'>
+														<img class="img-responsive" src="assets/images/demo/451x300/25-min.jpg" alt="" />
+													</a>
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+								</div><!-- /toggle -->
+
+								<div class="toggle"><!-- toggle -->
+									<label>4. Iaculis nulla non pulvinar?</label>
+									<div class="toggle-content">
+										<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque.</p>
+										<p class="clearfix">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+											<br /><br />
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+										</p>
+
+									</div>
+								</div><!-- /toggle -->
+
+								<div class="toggle"><!-- toggle -->
+									<label>5. Lorem ipsum dolor sit amet, consectetur?</label>
+									<div class="toggle-content">
+										<p class="clearfix">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+											<br /><br />
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+										</p>
+
+									</div>
+								</div><!-- /toggle -->
+
+								<div class="toggle"><!-- toggle -->
+									<label>6. Cum sociis natoque penatibus et magnis?</label>
+									<div class="toggle-content">
+										<p class="clearfix">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+											<br /><br />
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+										</p>
+
+									</div>
+								</div><!-- /toggle -->
+
+								<div class="toggle"><!-- toggle -->
+									<label>7. Ut eu risus enim, ut pulvinar lectus?</label>
+									<div class="toggle-content">
+										<p class="clearfix">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+											<br /><br />
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+										</p>
+
+									</div>
+								</div><!-- /toggle -->
+
+								<div class="toggle"><!-- toggle -->
+									<label>8. Nulla lacinia iaculis nulla non pulvinar?</label>
+									<div class="toggle-content">
+										<p class="clearfix">
+											<img class="hidden-sm pull-left img-responsive" src="assets/images/demo/girl_looking-min_thumb.jpg" alt="">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+											<br /><br />
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+										</p>
+
+									</div>
+								</div><!-- /toggle -->
+
+								<div class="toggle"><!-- toggle -->
+									<label>9. ¿Qué es lo que incluyen sus planes de servicio?</label>
+									<div class="toggle-content">
+										<p class="clearfix">
+											Mantenimiento proactivo y monitoreo las 24 horas del día en todos los equipos cubiertos, sistemas operativos, redes, anchos de banda, conexiones, aplicaciones genéricas y específicas, así como toda la actividad relacionada con su infraestructura entre ello:										</p>
+
+										<div class="row">
+
+											<div class="col-md-6 col-sm-6">
+
+												<ul class="list-icon check-square"><!-- block 2 -->
+													<li>Inventario y Auditoria de Hardware, Software y licencias</li>
+													<li>Informes gerenciales para control de la operación (reportes)</li>
+													<li>Administración de los parches de Microsoft</li>
+													<li>Administración de discos (rendimiento).</li>
+													<li>Control Remoto (Instalación / Políticas / Auditoria)</li>
+													<li>Restablecimiento de contraseñas </li>
+													<li>Creación y configuración de perfiles en la PC</li>
+													<li>Antivirus y antispyware</li>
+													<li>Help Desk</li>
+													<li></li>
+													
+												</ul>
+
+											</div>
+
+											<div class="col-md-6 col-sm-6">
+
+												<ul class="list-icon check-square"><!-- block 2 -->
+													<li>Administración de discos duros (mantenimiento y espacio)</li>
+													<li>Automatización de tareas</li>
+													<li>Gestión de licencias</li>
+													<li>Sistema de tickets</li>
+													<li>Monitoreo de indicadores y reportes para mejorar su planificación en TIC</li>
+													<li>Monitoreo de red y apps (utilización, rendimiento y disponibilidad)</li>
+													<li>Gestión de dispositivos SNMP</li>
+													<li>Monitoreo 7x24</li>
+												</ul>
+
+											</div>
+
+										</div>
+
+									</div>
+								</div><!-- /toggle -->
+
+								<div class="toggle"><!-- toggle -->
+									<label>10. Quisque rutrum pellentesque imperdiet?</label>
+									<div class="toggle-content">
+										<p class="clearfix">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Ut enim massa, sodales tempor convallis et, iaculis ac massa.
+										</p>
+
+										<div class="row">
+
+											<div class="col-md-4 col-sm-6">
+
+												<div class="box-content thumbnail text-center">
+													<a href="assets/images/demo/1200x800/10-min.jpg" class="item-image lightbox" data-plugin-options='{"type":"image"}'>
+														<img class="img-responsive" src="assets/images/demo/451x300/10-min.jpg" alt="" />
+													</a>
+												</div>
+
+											</div>
+
+											<div class="col-md-4 col-sm-6">
+
+												<div class="box-content thumbnail text-center">
+													<a href="http://www.youtube.com/watch?v=W7Las-MJnJo" class="item-image lightbox" data-plugin-options='{"type":"iframe"}'>
+														<img class="img-responsive" src="assets/images/demo/451x300/11-min.jpg" alt="" />
+													</a>
+												</div>
+
+											</div>
+
+											<div class="col-md-4 col-sm-6">
+
+												<div class="box-content thumbnail text-center">
+													<a href="assets/images/demo/1200x800/25-min.jpg" class="item-image lightbox" data-plugin-options='{"type":"image"}'>
+														<img class="img-responsive" src="assets/images/demo/451x300/25-min.jpg" alt="" />
+													</a>
+												</div>
+
+											</div>
+
+										</div>
+
+									</div>
+								</div><!-- /toggle -->
+
+
+
+							</div>
+							<!-- /TOGGLES -->
+
+							<!-- CALLOUT -->
+							<div class="callout alert alert-border margin-top-60 margin-bottom-60">
+
+								<div class="row">
+
+									<div class="col-md-9 col-sm-12"><!-- left text -->
+										<h4>Llámanos a los telefónos <strong>01 55 1450 3400</strong> o <strong>01 442 388 5034</strong> para comenzar a disfrutar de nuestros servicios</strong></h4>
+										<p class="font-lato size-17">
+											<br>
+											Nos preocupamos por ti y tu empresa.
+										</p>
+									</div><!-- /left text -->
+
+									
+									<div class="col-md-3 col-sm-12 text-right"><!-- right btn -->
+										<a href="#purchase" rel="nofollow" target="_blank" class="btn btn-default btn-lg">Contáctanos</a>
+									</div><!-- /right btn -->
+
+								</div>
+
+							</div>
+							<!-- /CALLOUT -->
+
+						</div>
+
 {% endblock %}
 
-{% block section2.container %}<header class="text-center margin-bottom-10"><h3>NUESTROS VALORES</h3></header>
-<div class="row">				
-	<div class="col-md-2 col-xs-6">
-		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-line-chart" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Liderazgo</h4>
-		</div>
-	</div>
-	<div class="col-md-2 col-xs-6">
-		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-globe " style="background-color:#fff; color: #F07057;"></i>
-			<h4>Respeto</h4>
-		</div>
-	</div>
-	<div class="col-md-2 col-xs-6">
-		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-comments-o" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Confianza</h4>
-		</div>
-	</div>
-	<div class="col-md-2 col-xs-6">
-		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-users" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Compromiso</h4>
-		</div>
-	</div>
-	<div class="col-md-2 col-xs-6">
-		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-trophy" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Actitud</h4>
-		</div>
-	</div>
-	<div class="col-md-2 col-xs-6">
-		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-balance-scale" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Ética</h4>
-		</div>
-	</div>
-</div>{% endblock %}
+{% block section2.container %}
+
+{% endblock %}
