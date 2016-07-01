@@ -1,60 +1,106 @@
 {% extends 'base_site.html' %}
-{% block title %}Sobre Nosotros{% endblock %}
-{% block title.h1 %}Nuestra Misión{% endblock %}
+{% block menu.servicios %}active{% endblock %}
+{% block title %}Servicios{% endblock %}
+{% block title.h1 %}Nuestros Servicios {% endblock %}
+{% block subtitle %}Siempre disponibles{% endblock %}
 {% block breadcrumb %}
 <li class="active">Nosotros</li>
 {% endblock %}
 
 {% block section1.container %}
-	{% if About %}
-		{% for description in About %}
-		<div class="col-lg-5 col-md-5 col-sm-5"><div style=""><img class="img-responsive" src="{{ description.imagen.url }}" alt=""></div></div><div class="col-lg-7 col-md-7 col-sm-7">
-		<h2 class="size-25">{{ description.titulo }}</h2>
-		<span style="font-size: 24px;"><strong>Misión</strong></span>
-		{{ description.mision|safe }}
-		<span style="font-size: 24px;"><strong>Visión</strong></span>
-		{{ description.vision|safe }}
-		<blockquote style="min-height:80px"><p>{{ description.cita }} </p><cite>{{ description.autor }}</cite></blockquote> </div>
-		{% endfor %}
-	{% endif %}
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet.</p>
+					
+					<div class="divider divider-center divider-color"><!-- divider -->
+						<i class="fa fa-chevron-down"></i>
+					</div>
+	<div class="col-md-4 col-xs-12">
+		<div class="text-center">
+			<a href="#"><i class="ico-color ico-lg ico-rounded ico-hover et-circle-compass"></i></a>
+			<h4>Servicios administrados</h4>
+			<p class="font-lato size-20">Evolución tecnológica a su beneficio.</p>
+
+		</div>
+	</div>
+	<div class="col-md-4 col-xs-12">
+		<div class="text-center">
+			<a href="#"><i class="ico-color ico-lg ico-rounded ico-hover et-piechart"></i></a>
+			<h4>Consult Complete Care</h4>
+			<p class="font-lato size-20">Nuestra Metodología C3.</p>
+
+		</div>
+	</div>
+	<div class="col-md-4 col-xs-12">
+		<div class="text-center">
+			<a href="#"><i class="ico-color ico-lg ico-rounded ico-hover et-strategy"></i></a>
+			<h4>Soluciones y valores</h4>
+			<p class="font-lato size-20">Diseñadas para reducir costos.</p>
+
+		</div>
+	</div>
+	<div class="col-md-4 col-xs-12">
+		<div class="text-center">
+			<a href="#"><i class="ico-color ico-lg ico-rounded ico-hover et-streetsign"></i></a>
+			<h4>Asesoría de Optimización IT</h4>
+			<p class="font-lato size-20">Soluciones integrales.</p>
+
+		</div>
+	</div>
+	<div class="col-md-4 col-xs-12">
+		<div class="text-center">
+			<a href="#"><i class="ico-color ico-lg ico-rounded ico-hover et-trophy"></i></a>
+			<h4>Diagnóstico de eficiencia</h4>
+			<p class="font-lato size-20">Alineado con las estrategias de negocio.</p>
+
+		</div>
+	</div>
+	<div class="col-md-4 col-xs-12">
+		<div class="text-center">
+			<a href="#"><i class="ico-color ico-lg ico-rounded ico-hover et-tools"></i></a>
+			<h4>Centro de entrenamiento Microsoft</h4>
+			<p class="font-lato size-20">La solución más completa para tu empresa.</p>
+
+		</div>
+	</div>
 {% endblock %}
 
-{% block section2.container %}<header class="text-center margin-bottom-10"><h3>NUESTROS VALORES</h3></header>
+{% block section2.container %}
+<header class="text-center margin-bottom-10"><h3>NUESTRAS CERTIFICACIONES</h3></header>
 <div class="row">				
-	<div class="col-md-2 col-xs-6">
+	<div class="col-md-2 col-xs-12">
 		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-line-chart" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Liderazgo</h4>
+			<img class="img-responsive" src="http://consulta-its.com/static/images/nosotros/cisa.jpg" alt=""></img>
 		</div>
 	</div>
-	<div class="col-md-2 col-xs-6">
+	<div class="col-md-2 col-xs-12">
 		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-globe " style="background-color:#fff; color: #F07057;"></i>
-			<h4>Respeto</h4>
+			<img class="img-responsive" src="http://consulta-its.com/static/images/nosotros/cobit.jpg" alt=""></img>
 		</div>
 	</div>
-	<div class="col-md-2 col-xs-6">
+	<div class="col-md-2 col-xs-12">
 		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-comments-o" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Confianza</h4>
+			<img class="img-responsive" src="http://consulta-its.com/static/images/nosotros/fips.jpg" alt=""></img>
 		</div>
 	</div>
-	<div class="col-md-2 col-xs-6">
+	<div class="col-md-2 col-xs-12">
 		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-users" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Compromiso</h4>
+			<img class="img-responsive" src="http://consulta-its.com/static/images/nosotros/itil.jpg" alt=""></img>
 		</div>
 	</div>
-	<div class="col-md-2 col-xs-6">
+	<div class="col-md-2 col-xs-12">
 		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-trophy" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Actitud</h4>
+			<img class="img-responsive" src="http://consulta-its.com/static/images/nosotros/mscloudservice.jpg" alt=""></img>
 		</div>
 	</div>
-	<div class="col-md-2 col-xs-6">
+	<div class="col-md-2 col-xs-12">
 		<div class="text-center">
-			<i class="ico-light ico-lg ico-rounded fa fa-balance-scale" style="background-color:#fff; color: #F07057;"></i>
-			<h4>Ética</h4>
+			<img class="img-responsive" src="http://consulta-its.com/static/images/nosotros/threattrack.jpg" alt=""></img>
+		</div>
 		</div>
 	</div>
-</div>{% endblock %}
+</div>
+{% endblock %}
+
+
+{% block callout.url %}/contacto.html{% endblock %}
+{% block callout.txt %}Lleva tu negocio al siguiente nivel,{% endblock %}
+{% block callout.bold %}Solicítalo ahora{% endblock %}

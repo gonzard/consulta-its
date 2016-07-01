@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.shortcuts import render_to_response
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template.loader import get_template
+from bakery.views import BuildableTemplateView
 
 def consult_home(request):
 	return render(request, 'index.html')
@@ -26,3 +27,32 @@ def consult_faq(request):
 
 def consult_sitemap(request):
 	return render(request, 'sitemap.xml', content_type = 'text/xml')
+
+
+class BuildableIndexView (BuildableTemplateView):
+	build_path = 'index.html'
+	template_name = 'index.html'
+
+class BuildableClientesView (BuildableTemplateView):
+	build_path = 'clientes.html'
+	template_name = 'clientes.html'
+
+class BuildableFaqView (BuildableTemplateView):
+	build_path = 'faq.html'
+	template_name = 'faq.html'
+
+class BuildableNosotrosView (BuildableTemplateView):
+	build_path = 'nosotros.html'
+	template_name = 'nosotros.html'
+
+class BuildableContacto (BuildableTemplateView):
+	build_path = 'contacto.html'
+	template_name = 'contacto.html'
+
+class BuildableServicio (BuildableTemplateView):
+	build_path = 'servicios.html'
+	template_name = 'servicios.html'
+
+class BuildableSitemap (BuildableTemplateView):
+	build_path = 'sitemap.xml'
+	template_name = 'sitemap.xml'
